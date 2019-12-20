@@ -1,16 +1,11 @@
 require "json"
-
 package = JSON.parse(File.read(File.join(__dir__, 'package.json')))
-version = package["version"]
-giturl = package["repository"]["url"]
 
 Pod::Spec.new do |s|
 s.name = "ReactNativePayments"
 s.version = package["version"]
 s.summary = "react-native-payments"
-s.description = <<-DESC
-Native Payments (Google and Apple Pay) from React-Native
-DESC
+s.description = package['description']
 s.homepage = "giturl"
 s.license = "MIT"
 s.authors = "Naoufal Kadhom", "Andrej Badin"
