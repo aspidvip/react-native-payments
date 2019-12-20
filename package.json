@@ -1,4 +1,7 @@
 {
+  "name": "react-native-payments",
+  "version": "1.0.0",
+  "description": "Text input mask for React Native.",
   "scripts": {
     "precommit": "lint-staged"
   },
